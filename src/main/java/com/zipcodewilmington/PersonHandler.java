@@ -21,6 +21,11 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
+        int count=0;
+        while (count<personArray.length){
+            result+=personArray[count];
+            count++;
+        }
         return result;
     }
 
@@ -38,7 +43,8 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
-
+        for (int i=0;i<personArray.length;i++)
+            result+=personArray[i];
         return result;
     }
 
@@ -54,7 +60,7 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
-
+        for (Person person: personArray) result += person;
         return result;
     }
 
